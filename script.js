@@ -9,6 +9,7 @@ $photo = document.getElementById("user_photo");
 
 const urlParams = new URLSearchParams(window.location.search)
 const avatar = urlParams.get("avatar")
+console.log(avatar)
 $photo.src=`${avatar}`
 
 function start() {
