@@ -5,11 +5,12 @@ $to = document.querySelector("#container_to_taps")
 $tolvl = document.querySelector("#container_to_lvl")
 $lvl = document.querySelector("#container_lvl")
 $body = document.body
+$photo = document.getElementById("user_photo");
 
 const urlParams = new URLSearchParams(window.location.search)
-const name = urlParams.get("name")
-const photo = urlParams.get("photo")
-console.log(name)
+const avatar = urlParams.get("avatar")
+$photo.src=`${avatar}`
+
 
 function start() {
     setScore(getScore())
