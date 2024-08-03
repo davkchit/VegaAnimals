@@ -9,7 +9,7 @@ $body = document.body
 const urlParams = new URLSearchParams(window.location.search)
 const name = urlParams.get("name")
 const photo = urlParams.get("photo")
-
+console.log(name)
 
 function start() {
     setScore(getScore())
