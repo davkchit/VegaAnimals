@@ -7,9 +7,7 @@ $lvl = document.querySelector("#container_lvl")
 $body = document.body
 $photo = document.getElementById("user_photo");
 
-const urlParams = new URLSearchParams(window.location.search)
-const name = urlParams.get("name")
-console.log(name)
+console.log(window.location.href)
 
 function start() {
     setScore(getScore())
