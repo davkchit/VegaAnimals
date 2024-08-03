@@ -7,6 +7,8 @@ $lvl = document.querySelector("#container_lvl")
 $body = document.body
 $photo = document.getElementById("user_photo");
 
+console.log(window.location.href)
+
 function start() {
     setScore(getScore())
     setImage()
